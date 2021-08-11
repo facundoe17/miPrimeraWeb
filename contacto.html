@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Facundo Elias">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="elementos.html">Elementos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="position.html">Position</a>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Mi primer sitio web</h1>
+            <h2 id="subtitulo">Comenzamos nuestro primer sitio web usando HTML5 y CSS3</h2>
+        </div>
+        <section class="contenedor centrar">
+            <h2>Formulario de contacto</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre y apellido*</label>
+                    <input type="text" placeholder="Juan Perez" id="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" placeholder="juanperez@gmail.com" id="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" placeholder="3812398123" id="telefono">
+                </div>
+                <div>
+                    <label for="consulta">Consulta*</label>
+                    <textarea id="consulta" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="opciones">Como nos conociste</label>
+                    <select>
+                        <option>Seleccione una opción</option>
+                        <option>Instagram</option>
+                        <option>Facebook</option>
+                        <option>Twitter</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <label>Tiene conocimientos previos de programación?</label>
+                        <div class="lineal">
+                            <input type="radio" name="grupo" value="si">
+                            <label>Si</label>
+                            <input type="radio" name="grupo" value="no">
+                            <label>No</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Seleccione los lenguajes</label>
+                        <div class="lineal">
+                            <input type="checkbox">
+                            <label>Javascript</label>
+                            <input type="checkbox">
+                            <label>Python</label>
+                            <input type="checkbox">
+                            <label>nodejs</label>
+                            <input type="checkbox">
+                            <label>C#</label>
+                            <input type="checkbox">
+                            <label>Java</label>
+
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;RollingCode Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
